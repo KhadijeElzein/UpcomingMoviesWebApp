@@ -15,7 +15,7 @@ The backend for UpcomingMoviesWebApp
     Routes.js was not considered boilerplate because it is the application's route file and is necessary for review.
 * Communication with the API: 
 Because a storage tool,a database, is used, and the API listing method already includes all the necessary data, communication with the API was performed only once, when starting the application.
-* What was considered an unnecessary file: The .gitignore from develop was explicitly removed because it was considered an unnecessary file and READ.me was kept only on the master.
+* What was considered an unnecessary file: The .gitignore from develop was explicitly removed because it was considered an unnecessary file and README was kept only on the master.
 * How to organize in git: separate repositories for the front-end and back-end were made.
 ## Special Build Instructions:
 * Back-End:
@@ -23,7 +23,7 @@ Because a storage tool,a database, is used, and the API listing method already i
     * Install Maven on your machine.
      * Link with installation instructions:
        * On Windows: https://howtodoinjava.com/maven/how-to-install-maven-on-windows/
-       *On Linux and MacOs: https: //www.baeldung.com/install-maven-on-windows-linux-mac
+       * On Linux and MacOs: https: //www.baeldung.com/install-maven-on-windows-linux-mac
     * Go to folder UpcomingMoviesWebApp.
     * Compile the program. To compile:
       * Install postgres, if not already installed, in your local machine. Link for installation:
