@@ -29,10 +29,15 @@ Because a storage tool,a database, is used, and the API listing method already i
       * Install postgres, if not already installed, in your local machine. Link for installation:
       * go to application.properties and change the configurations to run on your local machine instead of heroku (folder resources inside src/main).
         * For example : 
-          spring.datasource.url= jdbc:postgresql://localhost:5432/moviewebapp 
+        
+          spring.datasource.url= jdbc:postgresql://localhost:5432/moviewebapp
+          
           spring.datasource.username= {your postgres username}
+          
           spring.datasource.password= {your postgres password}
+          
           spring.jpa.hibernate.ddl-auto= create -- it's set to create in  order to autommatically create the database in hibernate. for production set to validate --
+          
       * In the terminal, go to the folder where pom.xml is located, and type:
  
         **mvn clean package**
