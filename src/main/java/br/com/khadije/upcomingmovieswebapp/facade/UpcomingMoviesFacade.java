@@ -35,7 +35,10 @@ public class UpcomingMoviesFacade {
 		else if(!newMovies.isEmpty()) {
 			 ListDiffer<UpcomingMovie> differ = new ListDiffer<UpcomingMovie>(oldMovies,newMovies);
 			 if(!differ.getAddedList().isEmpty())movieRepository.saveAll(differ.getAddedList());
-			 if(!differ.getRemovedList().isEmpty()) movieRepository.deleteAll(differ.getRemovedList());;
+			 if(!differ.getRemovedList().isEmpty()) {
+				 differ.getRemovedList().forEach(movie->movie.setGenres(null));
+				 movieRepository.deleteAll(differ.getRemovedList());;
+			 }
 		}
 	}
 }

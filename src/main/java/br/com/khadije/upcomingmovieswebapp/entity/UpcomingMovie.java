@@ -58,7 +58,7 @@ public class UpcomingMovie implements Serializable{
 	private String poster;
 	
 	
-	@ManyToMany(cascade=CascadeType.MERGE, fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "MovieGenre",
             joinColumns = {@JoinColumn(name = "movieId")},
             inverseJoinColumns = {@JoinColumn(name = "genreId")}

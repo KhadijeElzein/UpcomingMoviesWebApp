@@ -35,7 +35,7 @@ public class Genre implements Serializable{
 	private String genreName;
 	
 	@JsonIgnore
-	@ManyToMany(mappedBy = "genres", cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+	@ManyToMany(mappedBy = "genres", fetch = FetchType.LAZY)
 	private Set<UpcomingMovie> movies = new HashSet<>();
 	public Genre(int id) {
 	    this.id = id;
