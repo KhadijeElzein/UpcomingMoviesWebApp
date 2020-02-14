@@ -1,13 +1,13 @@
 # UpcomingMoviesWebApp
 The backend for UpcomingMoviesWebApp
 
-##Architecture
+## Architecture
 * Front-end and back-end were made separately. 
 * The Back-end is a REST API, following the multi-layer pattern, made in Spring Boot.
 * The Front-end is an application in Vue. 
 * It was done in this way in order to promote decoupling.
 
-##Assumptions
+## Assumptions
 * What was and was not considered boilerplate code: 
   * Framework files, libraries, third parties and configuration files were all considered boilerplate. 
     For instance, in the front-end application there was a server.js configuration file to communicate with heroku which was considered boilerplate code.
