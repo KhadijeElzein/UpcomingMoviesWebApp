@@ -71,9 +71,9 @@ Because a storage tool,a database, is used, and the API listing method already i
   Spring boot web was used and Spring data jpa. Spring web was used for the construction of the REST API, with a rest controller and Spring data jpa was used to communicate with the database and make database queries with Hibernate.
   Hibernate is an object-relational mapping tool for the Java programming language. It is used for mapping an object-oriented domain model to a relational database.
 * Front-End:
- * Vue Resource : Is used for handling ajax requests in Vue applications. It was used to make the request to the back-end API.
- * Vue Router: Is the official router for Vue.js. It was used for the routes in the front-end.
- * Bootstrap Vue: It was used integrate Bootstrap v4 components with Vue.js. For making the interface look prettier with Bootstrap.
+  * Vue Resource : Is used for handling ajax requests in Vue applications. It was used to make the request to the back-end API.
+  * Vue Router: Is the official router for Vue.js. It was used for the routes in the front-end.
+  * Bootstrap Vue: It was used integrate Bootstrap v4 components with Vue.js. For making the interface look prettier with Bootstrap.
   
 ## Endpoints:
 
