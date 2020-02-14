@@ -34,10 +34,14 @@ Because a storage tool,a database, is used, and the API listing method already i
           spring.datasource.password= < your postgres password>
           spring.jpa.hibernate.ddl-auto= create -- it's set to create in  order to autommatically create the database in hibernate. for production set to validate --
       * In the terminal, go to the folder where pom.xml is located, and type:
+ 
         **mvn clean package**
+        
       * To execute the application:
        * Go to the folder named target, where the application jar is located and type:
+       
          **java -jar upcomingmovieswebapp-0.0.1-SNAPSHOT.jar**
+         
  * Front-End:
    * Go to this git repository and clone or download the application : https://github.com/KhadijeElzein/UpcomingMoviesWebAppInterface
    * To compile and run:
@@ -46,10 +50,14 @@ Because a storage tool,a database, is used, and the API listing method already i
          * With package manager: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages
          * With installer : https://nodejs.org/en/download/
      * To install all needed dependencies, go to the application folder and type:
+ 
        **npm install** 
+       
      * To run the application, go to the application folder and type:
+ 
       **npm run dev**
-** Observations **:
+ 
+**Observations**:
 * The back-end application is running on port 9093, if you want to change just go to application.properties and change server.port to the port you desire.
 * For the application to work the back-end must be executing when you execute the front-end, but because in the front-end repository, the front-end is referencing heroku that won't be a problem.
 * Do not forget to install jdk 8 in your computer, because the back-end is executed in Java.
